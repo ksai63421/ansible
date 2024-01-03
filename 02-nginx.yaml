@@ -1,0 +1,9 @@
+- name: install and run nginx # name is not mandatory, this is best practice
+  hosts: mongodb
+  tasks:
+- name: install nginx
+  ansible.builtin.yum:
+    name: nginx
+    state: installed
+- name: start nginx
+   
