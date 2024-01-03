@@ -1,0 +1,37 @@
+# list of persons
+-name: saikrishna
+dob: 01-08-1994
+# this is map
+address: 
+   city: hyb
+   country: india
+   dno: 100
+   street: homebush
+   #list of addresses
+  addresses:
+   - type: perm
+     city: hyb
+     country: india
+   -type: current
+     city: california
+     country: us
+
+# this is second person
+-name: maddala
+dob: 01-08-1994
+# this is map
+address: 
+   city: hyb
+   country: india
+   dno: 100
+   street: homebush
+   #list of addresses
+  addresses:
+   - type: perm
+     city: hyb
+     country: india
+   - type: current
+     city: california
+     country: us
+
+  

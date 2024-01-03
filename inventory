@@ -1,0 +1,17 @@
+
+[mongodb]
+roboshop-us-dev-db-mongodb-01.joindevops.org
+
+[mysql]
+roboshop-us-dev-db-mysql-01.joindevops.org
+
+[app]
+roboshop-us-prod-app-cart-01.join.org
+
+[db:children]
+mongodb
+mysql
+
+[app:children]
+cart
+
