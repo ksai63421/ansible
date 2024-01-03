@@ -1,8 +1,7 @@
-# palybook contains multiple plays
 - name: ping the node 
   hosts: mongodb
 # this is list of tasks/modules/collections 
- tasks:
+  tasks:
 - name: ping the server
   # this is the map
   ansible.builtin.ping:
