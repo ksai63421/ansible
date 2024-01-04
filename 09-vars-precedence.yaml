@@ -10,7 +10,12 @@
     private: false
   tasks:
   - name: variable at task level
-    vars:
-     NAME: Sai-task
     ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
+
+      
+      #ouputs preferences
+
+      # 1. first prefrerence is command line
+      # 2. task level
+
