@@ -1,7 +1,7 @@
 - name: testing variable precedence
   hosts: mongodb
-  vars:
-    NAME: Sai-play
+  # vars:
+  #   NAME: Sai-play
   # vars_files:
   # - variables.yaml
   # vars_prompt:
@@ -20,5 +20,6 @@
       # 2. task level
       # 3.vars_files
       #4. prompt
+      #5.play-level
 
 
