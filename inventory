@@ -5,6 +5,7 @@ roboshop-us-dev-db-mongodb-01.joindevops.org
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
 MONGO_DB=categories
+NAME=Sai-inventory
 
 [mysql]
 roboshop-us-dev-db-mysql-01.joindevops.org

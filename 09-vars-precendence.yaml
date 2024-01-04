@@ -1,0 +1,15 @@
+- name: testing variable precedence
+  hosts: mongodb
+  vars:
+   NAME: Sai-play
+   vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: USERNAME
+    prompt: Please enter the tariner name
+    private: false
+  tasks:
+  - name: variable at task level
+    NAME: Sai-task
+    ansible.builtin.debug:
+     msg: "Trainer name is: {{NAME}}"
