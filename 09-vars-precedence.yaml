@@ -2,8 +2,8 @@
   hosts: mongodb
   vars:
     NAME: Sai-play
-  vars_files:
-  - variables.yaml
+  # vars_files:
+  # - variables.yaml
   vars_prompt:
   - name: USERNAME
     prompt: Please enter the tariner name
@@ -18,4 +18,5 @@
 
       # 1. first prefrerence is command line
       # 2. task level
+      # vars_files
 
