@@ -12,5 +12,5 @@
   - name: variable at task level
     vars:
      NAME: Sai-task
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Trainer name is: {{NAME}}"
