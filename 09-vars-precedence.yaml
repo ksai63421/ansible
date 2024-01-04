@@ -4,10 +4,10 @@
     NAME: Sai-play
   # vars_files:
   # - variables.yaml
-  vars_prompt:
-  - name: USERNAME
-    prompt: Please enter the tariner name
-    private: false
+  # vars_prompt:
+  # - name: USERNAME
+  #   prompt: Please enter the tariner name
+  #   private: false
   tasks:
   - name: variable at task level
     ansible.builtin.debug:
@@ -18,5 +18,7 @@
 
       # 1. first prefrerence is command line
       # 2. task level
-      # vars_files
+      # 3.vars_files
+      #4. prompt
+
 
