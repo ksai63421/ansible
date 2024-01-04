@@ -2,9 +2,9 @@
   hosts: mongodb
   # this is play level variables
    vars:
-   COURSE: Devops
-   TRAINER: Sai
-   DURATION:110HRS
+    COURSE: Devops
+    TRAINER: Sai
+    DURATION: 110HRS
    vars:
    tasks:
    - name: print hello world
