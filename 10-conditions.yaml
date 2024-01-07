@@ -23,5 +23,5 @@
   - name: create user roboshop
     become: yes  # we need sudo access fro this task only not play leve;
     ansible.builtin.debug:
-     msg: roboshop
-    when: output.rc !=0
+     name: roboshop
+    when: output.rc !=0 # if this expression is true this module will run
