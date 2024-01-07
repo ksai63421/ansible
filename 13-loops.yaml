@@ -4,10 +4,17 @@
   tasks:
   - name: install packages
     ansible.builtin.yum:
-     name: "{{item}}"
-     state: installed
+     name: "{{item.name}}"
+     state: "{{item.state}}"
+     # list of string
+    # loop:
+    # - nginx
+    # - postfix
+    # - cyrus-sasl-plain
+    # - mailx
+     # list of map
     loop:
-    - nginx
-    - postfix
-    - cyrus-sasl-plain
-    - mailx
+    - {name: 'nginx', state: 'absent'} 
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'cyrus-sasl-plain', state: 'absent'}
+    - {name: 'mailx', state: 'installed'}
