@@ -15,4 +15,7 @@
   - name: print the command output
     ansible.builtin.debug:
      msg: "output is: {{output}}" 
-  
+
+  - name: print exist status
+    ansible.builtin.debug:
+     msg: "output is: {{output.rc}}"
