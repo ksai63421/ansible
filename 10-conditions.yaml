@@ -21,6 +21,7 @@
      msg: "output is: {{output.rc}}"
 
   - name: create user roboshop
+    become: yes  # we need sudo access fro this task only not play leve;
     ansible.builtin.debug:
      msg: roboshop
     when: output.rc !=0
