@@ -19,3 +19,8 @@
   - name: print exist status
     ansible.builtin.debug:
      msg: "output is: {{output.rc}}"
+
+  - name: create user roboshop
+    ansible.builtin.debug:
+     msg: roboshop
+    when: output.rc !=0
