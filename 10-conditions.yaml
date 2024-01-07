@@ -4,9 +4,12 @@
   - name: check roboshop user exist or not
     # this command is user whenever you want ot run linux commands directly 
     # i .e in the case ansible module not available no gurenteee that all commands available in linuc in that case we need to give the commands directly
-     ansible.builtin.shell: cat /etc/motd 
+    # when the user does not exist ansible treating this as failure ans comeout by default
+    # noe we want to ignore the failure
+    
+    ansible.builtin.shell: cat /etc/motd 
      register: output # out put is variable name
   - name: print the command output
     ansible.builtin.debug:
-    msg: "output is: {{output}}" 
+     msg: "output is: {{output}}" 
   
