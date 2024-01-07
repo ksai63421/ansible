@@ -8,7 +8,7 @@
     # noe we want to ignore the failure
     
     ansible.builtin.shell: cat /etc/motd 
-     register: output # out put is variable name
+    register: output # out put is variable name
   - name: print the command output
     ansible.builtin.debug:
      msg: "output is: {{output}}" 
