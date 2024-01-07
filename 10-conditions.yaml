@@ -7,9 +7,11 @@
     # when the user does not exist ansible treating this as failure ans comeout by default
     # noe we want to ignore the failure
     #ignore_errors: true
-    ansible.builtin.shell: cat /etc/motd 
+
+    ansible.builtin.shell: id roboshop 
     register: output # out put is variable name
     ignore_errors: true
+
   - name: print the command output
     ansible.builtin.debug:
      msg: "output is: {{output}}" 
