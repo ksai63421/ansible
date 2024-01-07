@@ -2,7 +2,7 @@
   hosts: mongodb
   become: yes
   tasks:
-  - name: install pacakages
+  - name: install packages
     ansible.builtin.debug:
      name: "{{item}}"
      state: installed
